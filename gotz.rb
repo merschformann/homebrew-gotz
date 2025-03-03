@@ -5,20 +5,20 @@
 class Gotz < Formula
   desc "A simple CLI timezone conversion assistant, written in Go"
   homepage "https://github.com/merschformann/gotz"
-  version "0.1.13"
+  version "0.1.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/merschformann/gotz/releases/download/v0.1.13/gotz_0.1.13_darwin_amd64.tar.gz"
-      sha256 "a897508dc7eb9cc0e77bff603e3e4e9f1a4641f524f6f406ab3b4c866019a610"
+      url "https://github.com/merschformann/gotz/releases/download/v0.1.14/gotz_0.1.14_darwin_amd64.tar.gz"
+      sha256 "8bc9c969f5e3b10ba20218a1fcc00f334b4ccfbc4f6b61fa2eea313e57b63429"
 
       def install
         bin.install "gotz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/merschformann/gotz/releases/download/v0.1.13/gotz_0.1.13_darwin_arm64.tar.gz"
-      sha256 "d1ba5f09b45558af1846bebf5da1d1a9b771380fd02c1008129667bb4fb202fa"
+      url "https://github.com/merschformann/gotz/releases/download/v0.1.14/gotz_0.1.14_darwin_arm64.tar.gz"
+      sha256 "a291928510dfd5b344c5f320be1c246ba30d606ba22fa1ed51a841956fc07433"
 
       def install
         bin.install "gotz"
@@ -29,8 +29,8 @@ class Gotz < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/merschformann/gotz/releases/download/v0.1.13/gotz_0.1.13_linux_amd64.tar.gz"
-        sha256 "01aece72a8ffa47b543c7989da5b52e14a6235b06a06daf7352c78bd792cfb07"
+        url "https://github.com/merschformann/gotz/releases/download/v0.1.14/gotz_0.1.14_linux_amd64.tar.gz"
+        sha256 "8e14aac3232616d5863bd7a2b4b62736f67d1d4edc3922521754e23b5a39b35f"
 
         def install
           bin.install "gotz"
@@ -39,8 +39,8 @@ class Gotz < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/merschformann/gotz/releases/download/v0.1.13/gotz_0.1.13_linux_armv6.tar.gz"
-        sha256 "5d667bd9dd7acac991b5490215a06b95c68a838becd8addbff7a7d59d727e21c"
+        url "https://github.com/merschformann/gotz/releases/download/v0.1.14/gotz_0.1.14_linux_armv6.tar.gz"
+        sha256 "e9ceca394c73fe35841a225895ec11679e53e787eea914568cb4f1ebc50c54f5"
 
         def install
           bin.install "gotz"
@@ -49,8 +49,8 @@ class Gotz < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/merschformann/gotz/releases/download/v0.1.13/gotz_0.1.13_linux_arm64.tar.gz"
-        sha256 "1c8be3ff5a3a5a31c20a4ffc1fc088d111b039b309955964529305484652583a"
+        url "https://github.com/merschformann/gotz/releases/download/v0.1.14/gotz_0.1.14_linux_arm64.tar.gz"
+        sha256 "7de98af92cbbd020c028ab98cb15ed25a45e72eac3860df293f9593f28467ea8"
 
         def install
           bin.install "gotz"
